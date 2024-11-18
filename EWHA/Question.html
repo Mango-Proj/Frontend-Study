@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>금연 설문조사</title>
+    <link rel="stylesheet" href="./questionStyle.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <br>
+    <div>이화여대 보건연구실 금연 설문조사</div>
+    <br>
+    <table>
+        <colgroup>
+            <col class="col1">
+            <col class="col2">
+            <col class="col3">
+            <col class="col4">
+            <col class="col5">
+            <col class="col6">
+        </colgroup>
+        <tr>
+            <th>문항</th>
+            <th>매우 그렇지 않다</th>
+            <th>그렇지 않다</th>
+            <th>보통이다</th>
+            <th>그렇다</th>
+            <th>매우 그렇다</th>
+        </tr>
+        <tr>
+            <td id="Qu1">마음이 조급할 때 여유를 가지기 위해 피운다.</td>
+            <td><input type="radio" id = 11 name="Q1" value=1 /></td>
+            <td><input type="radio" id = 12 name="Q1" value=2 /></td>
+            <td><input type="radio" id = 13 name="Q1" value=3 /></td>
+            <td><input type="radio" id = 14 name="Q1" value=4 /></td>
+            <td><input type="radio" id = 15 name="Q1" value=5 /></td>
+        </tr>
+        <tr>
+            <td id="Qu2">능률을 높이기 위해 피운다.</td>
+            <td><input type="radio" id = 21 name="Q2" value=1 /></td>
+            <td><input type="radio" id = 22 name="Q2" value=2 /></td>
+            <td><input type="radio" id = 23 name="Q2" value=3 /></td>
+            <td><input type="radio" id = 24 name="Q2" value=4 /></td>
+            <td><input type="radio" id = 25 name="Q2" value=5 /></td>
+        </tr>
+        <tr>
+            <td id="Qu3">기분전환을 하려고 피운다.</td>
+            <td><input type="radio" id = 31 name="Q3" value=1 /></td>
+            <td><input type="radio" id = 32 name="Q3" value=2 /></td>
+            <td><input type="radio" id = 33 name="Q3" value=3 /></td>
+            <td><input type="radio" id = 34 name="Q3" value=4 /></td>
+            <td><input type="radio" id = 35 name="Q3" value=5 /></td>
+        </tr>
+    </table>
+    <br>
+    <div class="buttonset">
+        <button id="previous-btnset" onclick = "changeQ(0)">이전 문항</button>
+        <button id="next-btnset" onclick = "changeQ(1)">다음 문항</button>
+    </div>
+    
+    <script src="./control.js"></script>
+</body>
+</html>

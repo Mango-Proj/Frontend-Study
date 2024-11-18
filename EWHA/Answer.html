@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./answerStyle.css">
+
+    <title>설문조사 결과지</title>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="col1">
+            <col class="col2">
+        </colgroup>
+
+        <tr>
+            <th>유형</th>
+            <th>내용</th>
+        </tr>
+
+        <tr>
+            <td>A</td>
+            <td id = 'A'>해당 없음</td>
+        </tr>
+
+        <tr>
+            <td>B</td>
+            <td id = 'B'>해당 없음</td>
+        </tr>
+
+        <tr>
+            <td>C</td>
+            <td id = 'C'>해당 없음</td>
+        </tr>
+
+        <tr>
+            <td>D</td>
+            <td id = 'D'>해당 없음</td>
+        </tr>
+
+        <tr>
+            <td>E</td>
+            <td id = 'E'>해당 없음</td>
+        </tr>
+
+        <tr>
+            <td>F</td>
+            <td id = 'F'>해당 없음</td>
+        </tr>
+
+        <tr>
+            <td>G</td>
+            <td id = 'G'>해당 없음</td>
+        </tr>
+    </table>
+    <br>
+    <div class="buttonset">
+        <button id="button-restart" onclick = "restart()">다시 시작</button>
+    </div>
+
+    <script>
+        window.onload = function(){
+            document.getElementById("A").innerText = localStorage.getItem('A');
+            document.getElementById("B").innerText = localStorage.getItem('B');
+            document.getElementById("C").innerText = localStorage.getItem('C');
+            document.getElementById("D").innerText = localStorage.getItem('D');
+            document.getElementById("E").innerText = localStorage.getItem('E');
+            document.getElementById("F").innerText = localStorage.getItem('F');
+            document.getElementById("G").innerText = localStorage.getItem('G');
+        }
+        
+        function restart(){
+            location.href = "Question.html";
+        }
+    </script>
+</body>
+</html>

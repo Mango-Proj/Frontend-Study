@@ -1,0 +1,60 @@
+div{
+    text-align: center;
+    font-size: 25pt;
+    font-weight: bold;
+}
+table{
+    margin-left:auto; 
+    margin-right:auto;
+
+    border: 2px solid black;
+    border-collapse : collapse;
+}
+th{
+    border: 2px solid black;
+    padding: 12px;
+    font-size: 8.5pt;
+    background-color: yellow;
+}
+td{
+    border: 2px solid black;
+    padding: 12px;
+    
+    font-size: 10pt;
+    text-align: center;
+}
+.col1{
+    width: 250px;
+}
+.col2{
+    width: 120px;
+}
+.col3{
+    width: 120px;
+}
+.col4{
+    width: 120px;
+}
+.col5{
+    width: 120px;
+}
+.col6{
+    width: 120px;
+}
+
+button{
+    height: 60px;
+    width: 200px;
+
+    font-size: 15pt;
+    font-weight: bold;
+
+    background-color: yellowgreen;
+}
+
+.buttonset{
+    text-align: center;
+}
+.btnset{
+    display :inline-block;
+}
