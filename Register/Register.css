@@ -1,0 +1,100 @@
+@import url('https://font.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    /*
+    URL 적용이 안됨... 우선 단색 적용 
+    background: url("bg.jpg") no-repeat center;
+    */
+    background-color:wheat;
+    background-size: cover;
+}
+
+.Register-Form {
+    padding: 40px 40px 40px;
+    background-color:rgb(212, 174, 70);
+    position: relative;
+    z-index: 2;
+}
+
+.Register-Form h1{
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+}
+
+.input-area{
+    height: 75px;
+    width: 400px;
+    position: relative;
+} 
+
+.input-area input{
+    width: 100%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+}
+
+.input-area label{ 
+    position: absolute;
+    left: 10px; top:15px;
+    font-size: 18px; color: #fff;
+    transition: all .5s ease;
+}
+
+.input-area input:focus + label, 
+.input-area input:valid + label{
+    top: 0;
+    font-size: 13px;
+    color: #166cea;
+}
+
+.date-area{
+    height: 75px;
+    width: 400px;
+    position: relative;
+}
+
+.date-area label{
+    padding: 0px 10px 7px;
+    width: 20%;
+    display: inline-block;
+    font-size: 18px; color: #fff;
+}
+.date-area input{
+    width: 100%;
+    font-size: 18px;
+    display: inline-block;
+}
+.radio-area{
+    height: 75px;
+    width: 400px;
+    position: relative;
+}
+
+.radio-area input {
+    height: 20px;
+    width: 20px;
+    margin-right: 2%;
+}
+
+.radio-area label {
+    height: 100%;
+    margin-right: 3%;
+    font-size: 18px; color: #fff;
+}
