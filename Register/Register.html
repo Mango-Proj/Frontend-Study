@@ -3,40 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
     <link rel="stylesheet" href="./Register.css">
 </head>
 <body>
     <section class = "Register-Form">
         <h1>Register</h1>
         <form action="">
-            <div class="input-area">
-                <input type="text" name="name" id="name" autocomplete="off" required>
-                <label for="name">USERNAME</label>
-            </div>
-            <div class="input-area">
-                <input type="e-mail" name="e-mail" id="e-mail" autocomplete="off" required>
-                <label for="e-mail">E-MAIL</label>
-            </div>
-            <div class="input-area">
-                <input type="password" name="pw" id="pw" autocomplete="off" required>
-                <label for="pw">PASSWORD</label>
-            </div>
-            <div class="input-area">
-                <input type="password" name="pw-confirm" id="pw-confirm" autocomplete="off" required>
-                <label for="pw-confirm">CONFIRM PASSWORD</label>
-            </div>
-            <div class="date-area">
-                <label>BIRTH</label>
-                <input type="date" name="birth" id="birth" autocomplete="off" required>
-            </div>
-            <div class="radio-area">
-                <label>GENDER</label>
-                <input type="radio" name="gender" id="male" autocomplete="off" required>
-                <label for="male">MALE</label>
-                <input type="radio" name="gender" id="female" autocomplete="off" required>
-                <label for="female">FEMALE</label>
-            </div>
+            <table class="table_area">
+                <colgroup>
+                    <col class="title_col">
+                    <col class="input_col">
+                </colgroup>
+                <tr>
+                    <td><label class="title">ID</label></td>
+                    <td><input type="text" class="text"></td>
+                </tr>
+                <tr>
+                    <td><label class="title">PW</label></td>
+                    <td><input type="password" class="text"></td>
+                </tr>
+                <tr>
+                    <td><label class="title">Confirm PW</label></td>
+                    <td><input type="password" class="text"></td>
+                </tr>
+                <tr>
+                    <td><label class="title">Name</label></td>
+                    <td><input type="text" class="text"></td>
+                </tr>
+                <tr>
+                    <td><label class="title">Birth</label></td>
+                    <td><input type="date" class="text"></td>
+                </tr>
+                <tr>
+                    <td><label class="title">E-mail</label></td>
+                    <td><input type="text" class="email"> @ 
+                        <select>
+                            <option>naver.com</option>
+                            <option>gmail.com</option>
+                            <option>daum.net</option>
+                            <option>nate.com</option>
+                        </select>
+                    </td>
+                </tr>
+                </table>
+                <div class="btn-area">
+                    <input type="submit" value="Register" class="btn" onclick="alert('가입 성공!')">
+                    <input type="reset" value="Cancel" class="btn" onclick="alert('가입 취소!')">
+                </div>
         </form>
     </section>
 </body>
