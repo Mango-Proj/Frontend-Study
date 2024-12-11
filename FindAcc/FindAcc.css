@@ -1,0 +1,17 @@
+
+*{margin: 0;padding: 0;box-sizing: border-box;}
+body{font-family: 'Noto Sans KR', sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color:#ffffff(221, 221, 221); background-size: cover;}
+
+.findacc-form {border: 1px solid black; border-radius: 10px; width: 450px; height: 420px; text-align: center; position: relative; z-index: 2;}
+.findacc-form h1{font-size: 32px; color: black; text-align: center;}
+.findacc-form h3{font-size: 16px; color: black; text-align: center;}
+.findacc-form table{margin: auto; padding-top: 30px; text-align: center; width: 85%;}
+
+.select-area {margin: auto; width: 95%; height: 100px; margin-top: 20px; margin-bottom: 20px; text-align: center;}
+.select-area button{background-color: lightgrey; font-weight: bold; width: 45%; height: 70%; margin: 5px; color: #ffffff; font-size: 20px; display: inline-block; border: 1px solid black; border-radius: 15px; cursor: pointer;}
+
+
+.btn-area {margin: auto; width: 90%; height: 100px; text-align: center;}
+.btn-area button{background-color: lightgrey; font-weight: bold; width: 45%; height: 70%; margin: 5px; color: #ffffff; font-size: 20px; border: 1px solid black; border-radius: 15px; cursor: pointer;}
+#btn-fid{background-color: lightblue;}
+.find_input{ margin-bottom: 10px; padding: 10px; width: 100%; height: 50px; border: 1.5px solid black; border-radius: 10px; font-size: 16px; } 
